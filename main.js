@@ -32,8 +32,10 @@ function getRandomColor() {
   }
 
    function clearBoard() {
-    let divs = document.querySelectorAll('div');
-    divs.forEach((div) => div.style.backgroundColor = 'white')
+    let divs = document.querySelectorAll('.dots');
+    divs.forEach(function(divvy) {
+        divvy.style.backgroundColor = 'white';
+    })
   }
 
 
