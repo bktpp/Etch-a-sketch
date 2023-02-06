@@ -1,7 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', function(){
-   createGrid(25);
+   createGrid(16);
 });
+
+
+
+const dots = document.getElementsByClassName('dots');
 
 function createGrid(size) {
     let gridContainer = document.querySelector('.grid-container');
@@ -12,10 +16,11 @@ let requestedDivs = size * size;
 
 for (let i = 0; i < requestedDivs; i++) {
     let babyDivs = document.createElement('div');
+    babyDivs.classList.add('dots');
     babyDivs.style.borderRadius = '50%';
     gridContainer.insertAdjacentElement('beforeend', babyDivs);
     babyDivs.addEventListener('mouseover', function() {
-        babyDivs.style.backgroundColor = getRandomColor();})
+    babyDivs.style.backgroundColor = getRandomColor();})    
   }
 } 
 
@@ -24,6 +29,11 @@ function getRandomColor() {
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
     return "rgb(" + r + ", " + g + ", " + b + ")";
+  }
+
+   function clearBoard() {
+    let divs = document.querySelectorAll('div');
+    divs.forEach((div) => div.style.backgroundColor = 'white')
   }
 
 
