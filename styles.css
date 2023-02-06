@@ -3,10 +3,29 @@
     margin: 0;
 }
 
-body {
+/*body {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px red solid;
+    height: 800px;
+    background-color: rgb(74, 71, 71);
+    
+}
+
+.sidebar {
+    height: 500px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px green solid;
 }
 
 .grid-container {
@@ -14,5 +33,7 @@ body {
     border: 1px red solid;
     height: 500px;
     width: 500px;
+    border-radius: 10px;
+    background-color: white;
 }
 
