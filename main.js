@@ -42,17 +42,12 @@ function getRandomColor() {
         return  "rgb(" + r + ", " + g + ", " + b + ")";
     }
  
-
-  
-
    function clearBoard() {
     let divs = document.querySelectorAll('.dots');
     divs.forEach(function(divvy) {
         divvy.style.backgroundColor = 'white';
     })
   }
-
-  
 
   function redColor() {
     let red = document.querySelectorAll('.dots');
@@ -78,56 +73,3 @@ function getRandomColor() {
     })
   } 
   
-
-
-
-
-
-
-
-
-
-/*
-for (let i = 0; i < 256; i++) {
-    const babyDivs = document.createElement('div');
-    babyDivs.style.backgroundColor = 'limegreen';
-    babyDivs.style.border = '1px solid red';
-    babyDivs.style.textAlign = 'center';
-    gridContainer.appendChild(babyDivs);
-    babyDivs.addEventListener('mouseover', function() {
-        babyDivs.style.backgroundColor = 'red';
-    });
-}
-
-
-
-/* 
-const style = document.createElement('style');
-style.textContent = `
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(16, 1fr);
-        grid-template-rows: repeat(16, 1fr);
-        width: 100%;
-        height: 100%;
-    }
-    
-    .grid div {
-        background-color: limegreen;
-        border: 1px solid black;
-    }    
-    `;
-
-    document.head.appendChild(style);
-
-
-
-
-/* document.body.appendChild(flexContainer);
-
-document.body.style.display = 'flex';
-document.body.style.height = '100vh';
-document.body.style.justifyContent = 'center';
-document.body.style.alignItems = 'center'; */
-
-
