@@ -19,6 +19,15 @@ for (let i = 0; i < requestedDivs; i++) {
     gridContainer.insertAdjacentElement('beforeend', babyDivs);
     babyDivs.addEventListener('mouseover', function() {
     babyDivs.style.backgroundColor = getRandomColor()}) 
+    babyDivs.addEventListener('touchstart', function() {
+        babyDivs.style.backgroundColor = getRandomColor()
+    })
+    babyDivs.addEventListener('touchmove', function() {
+        babyDivs.style.backgroundColor = getRandomColor()
+    })
+    babyDivs.addEventListener('touchend', function() {
+        babyDivs.style.backgroundColor = getRandomColor()
+    })
   }
   
 } 
