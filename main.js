@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
    createGrid(16);
 });
 
-
-
-const dots = document.getElementsByClassName('dots');
+// const dots = document.getElementsByClassName('dots');
 
 function createGrid(size) {
     let gridContainer = document.querySelector('.grid-container');
@@ -20,6 +18,8 @@ for (let i = 0; i < requestedDivs; i++) {
     babyDivs.style.borderRadius = '50%';
     gridContainer.insertAdjacentElement('beforeend', babyDivs);
     babyDivs.addEventListener('mouseover', function() {
+    babyDivs.style.backgroundColor = getRandomColor();}) 
+    babyDivs.addEventListener('touchstart', function() {
     babyDivs.style.backgroundColor = getRandomColor();})    
   }
 } 
