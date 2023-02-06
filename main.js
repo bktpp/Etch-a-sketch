@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function(){
-   createGrid(16);
+   createGrid(25);
 });
 
 function createGrid(size) {
