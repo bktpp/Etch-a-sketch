@@ -41,11 +41,11 @@ body {
 
 .grid-container {
     display: grid;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     border-radius: 10px;
     background-color: white;
-    
+    box-shadow: 0 30px 70px #333;
 }
 
 .colorful {
@@ -84,7 +84,7 @@ body {
 }
 
 .red:hover, .black:hover, .colorful:hover {
-    box-shadow: 0 10px 15px #333;
+    box-shadow: 0 10px 20px #333;
 }
 
 
