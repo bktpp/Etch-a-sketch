@@ -12,10 +12,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: transparent;
 }
-
 
 .item:nth-child(1) {
     order: 1;
@@ -26,15 +25,17 @@ body {
 
 .game-name {
     text-align: center;
-    padding: 50px;
+    font-size: 80px;
+    font-family: 'Caveat', cursive;
+    padding-bottom: 25px;
 }
 
 .sidebar {
-    width: 400px;
+    width: 275px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 50px;
+    justify-content: flex-start;
+    gap: 20px;
     align-items: center;
     height: 600px;
 }
@@ -45,7 +46,11 @@ body {
     width: 500px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 30px 70px #333;
+    transition: box-shadow 0.5s ease-in;
+}
+
+.grid-container:hover {
+    box-shadow: 0 50px 60px #333;
 }
 
 .colorful {
@@ -69,9 +74,14 @@ body {
 .clear {
     font-size: 20px;
     border-radius: 25px;
-    background-color: rgb(222, 40, 40);
+    background-color: transparent;
     color: white;
     font-weight: thin;
+    padding: 20px;
+}
+
+.clear:hover {
+    box-shadow: 0 10px 20px #333;
 }
 
 .red {
@@ -85,6 +95,37 @@ body {
 
 .red:hover, .black:hover, .colorful:hover {
     box-shadow: 0 10px 20px #333;
+}
+
+.label {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #36454F;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.submit {
+    width: 93.2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: gray;
+    margin-top: 2px;
+    border-radius: 5px;
+    border: 1px gray solid;
+}
+
+#input-number {
+    width: 93.2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 32px;
 }
 
 

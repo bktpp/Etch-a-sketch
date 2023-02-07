@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function(){
     let userInput = parseInt(inputElement.value);
     createGrid(userInput);
       });
+      const title = document.querySelector('h1');
+      title.style.color = '#00FFFF';
     })
 
 // const dots = document.getElementsByClassName('dots');
@@ -27,18 +29,6 @@ for (let i = 0; i < requestedDivs; i++) {
     babyDivs.style.backgroundColor = getRandomColor()}) 
   }
 } 
-
-function colorPick(buttonClicked) {
-    let color = 'white';
-    if(buttonClicked === 'red') {
-        color = 'red';
-    } else if (buttonClicked === 'blue') {
-        color = 'blue';
-    } else if (buttonClicked === 'colorful'){
-        
-    } 
-      return color
-}
 
 function getRandomColor() {
         let r = Math.floor(Math.random() * 256);
