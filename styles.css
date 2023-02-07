@@ -14,7 +14,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    
 }
 
 
@@ -81,6 +80,7 @@ body {
     padding: 30px;
     border-radius: 50%;
     border: none;
+    background-color: rgb(222, 40, 40);
 }
 
 .red:hover, .black:hover, .colorful:hover {
