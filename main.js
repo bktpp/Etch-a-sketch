@@ -1,7 +1,13 @@
 
 document.addEventListener('DOMContentLoaded', function(){
-   createGrid(16);
-});
+    let inputElement = document.getElementById('input-number');
+    let formElement = document.getElementById('input-form');
+    formElement.addEventListener("submit", function(event) {
+    event.preventDefault();
+    let userInput = parseInt(inputElement.value);
+    createGrid(userInput);
+      });
+    })
 
 // const dots = document.getElementsByClassName('dots');
 
@@ -19,17 +25,7 @@ for (let i = 0; i < requestedDivs; i++) {
     gridContainer.insertAdjacentElement('beforeend', babyDivs);
     babyDivs.addEventListener('mouseover', function() {
     babyDivs.style.backgroundColor = getRandomColor()}) 
-    babyDivs.addEventListener('touchstart', function() {
-        babyDivs.style.backgroundColor = getRandomColor()
-    })
-    babyDivs.addEventListener('touchmove', function() {
-        babyDivs.style.backgroundColor = getRandomColor()
-    })
-    babyDivs.addEventListener('touchend', function() {
-        babyDivs.style.backgroundColor = getRandomColor()
-    })
   }
-  
 } 
 
 function colorPick(buttonClicked) {

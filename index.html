@@ -14,10 +14,17 @@
             <div class="grid-container item">
             </div>
             <div class="sidebar item">
-                <button class ="clear" onclick="clearBoard()">RESET</button>
-                <button class ="red" onclick="redColor()">r</button>
-                <button class = "black" onclick="blackColor()">b</button>
-                <button class = "colorful" onclick="colorful()">c</button>
+               <form id="input-form"> 
+                    <label for="input-number">Choose between 1-100:  
+                        <input id ="input-number" type="number" min="1" max="100">
+                    </label>    
+                        <button type="submit">Send it</button>
+                     
+               </form>  
+               <button class ="clear" onclick="clearBoard()">RESET</button>
+               <button class ="red" onclick="redColor()">r</button>
+               <button class = "black" onclick="blackColor()">b</button>
+               <button class = "colorful" onclick="colorful()">c</button>
             </div>
         </div>
     </body>

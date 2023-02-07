@@ -13,9 +13,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 2px greenyellow solid;
-    background-color: rgb(74, 71, 71);
-    background: radial-gradient(circle at center, #2065EF, #ffffff);
+    background-color: transparent;
+    
 }
 
 
@@ -27,7 +26,6 @@ body {
 }
 
 .game-name {
-    border: 2px red solid;
     text-align: center;
     padding: 50px;
 }
@@ -39,14 +37,11 @@ body {
     justify-content: center;
     gap: 50px;
     align-items: center;
-    border: 1px green solid;
     height: 600px;
-   
 }
 
 .grid-container {
     display: grid;
-    border: 1px red solid;
     height: 600px;
     width: 600px;
     border-radius: 10px;
@@ -86,12 +81,15 @@ body {
     padding: 30px;
     border-radius: 50%;
     border: none;
-    background-color: red;
 }
 
 .red:hover, .black:hover, .colorful:hover {
     box-shadow: 0 10px 15px #333;
 }
+
+
+
+
 
 
 
