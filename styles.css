@@ -114,11 +114,16 @@ body {
     font-family: 'Caveat', cursive;
     font-size: 20px;
     color: gray;
+    background-color: rgb(255, 250, 250);
     margin-top: 2px;
     border-radius: 5px;
     border: 1px gray solid;
 }
 
+.submit:active {
+    background-color: gray;
+    color: rgb(255, 250, 250);
+}
 #input-number {
     width: 93.2px;
     padding-left: 20px;
